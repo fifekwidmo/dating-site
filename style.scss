@@ -1,5 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lato:300,400,700&display=swap&subset=latin-ext');
  @import "buttons.scss";
+ @import "section.scss";
+ @import "maintitle.scss";
  // font-family: 'Lato', ;
  // font-family: 'Dancing Script' ;
  $main-font: 'Lato';
@@ -30,8 +32,8 @@
  }
  
  section {
-     padding-top: 80px;
-     padding-bottom: 80px;
+     padding-top: 50px;
+     padding-bottom: 50px;
  }
  
  h1,
@@ -233,8 +235,6 @@
  }
  
  .people {
-     margin-top: 100px;
-     margin-bottom: 100px;
      color: white;
      .people-desc {
          display: flex;
@@ -292,8 +292,6 @@
  }
  
  .team {
-     margin-top: 100px;
-     margin-bottom: 100px;
      .container-third {
          display: flex;
          flex-direction: row;
@@ -311,8 +309,6 @@
  }
  
  .products {
-     margin-top: 100px;
-     margin-bottom: 100px;
      padding-bottom: 100px;
      padding-top: 100px;
      background-color: cornflowerblue;
@@ -333,8 +329,6 @@
  }
  
  .map {
-     margin-top: 100px;
-     margin-bottom: 100px;
      .container-fifth {
          display: flex;
          flex-direction: row;
@@ -358,8 +352,6 @@
  }
  
  .site {
-     margin-top: 100px;
-     margin-bottom: 100px;
      .container-sixth {
          display: flex;
          flex-direction: column;
@@ -405,4 +397,50 @@
  
  footer h3 {
      color: black;
+ }
+ 
+ //buttons
+ .ball {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     border: 2px dashed #fff;
+     text-decoration: none;
+     animation: shadow-pulse 1s infinite;
+ }
+ 
+ .wrapper-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: nowrap;
+     width: 100vw;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+ .wrapper {
+     padding: 20px;
+ }
+ 
+ @keyframes shadow-pulse {
+     0% {
+         box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+         box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+ }
+ 
+ @keyframes shadow-pulse-big {
+     0% {
+         box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+     }
+     100% {
+         box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+     }
  }

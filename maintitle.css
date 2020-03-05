@@ -1,0 +1,224 @@
+div.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.deconstructed {
+  position: relative;
+  margin: auto;
+  height: 1.71em;
+  color: transparent;
+  font-family: 'Cambay', sans-serif;
+  font-size: 8vw;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+}
+
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #FE3C72;
+  pointer-events: none;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, black), color-stop(25%, transparent));
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, black), color-stop(25%, transparent));
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  -webkit-animation: deconstructed1 5s infinite;
+          animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, black), color-stop(50%, black), color-stop(50%, transparent));
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, black), color-stop(50%, black), color-stop(50%, transparent));
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  -webkit-animation: deconstructed2 5s infinite;
+          animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, black), color-stop(75%, black), color-stop(75%, transparent));
+  -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, black), color-stop(75%, black), color-stop(75%, transparent));
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  -webkit-animation: deconstructed3 5s infinite;
+          animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, transparent), color-stop(75%, black));
+  -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, transparent), color-stop(75%, black));
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  -webkit-animation: deconstructed4 5s infinite;
+          animation: deconstructed4 5s infinite;
+}
+
+@-webkit-keyframes deconstructed1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  26% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  83% {
+    -webkit-transform: translateX(-0.1%);
+            transform: translateX(-0.1%);
+  }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+}
+
+@keyframes deconstructed1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  26% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  83% {
+    -webkit-transform: translateX(-0.1%);
+            transform: translateX(-0.1%);
+  }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+  }
+}
+
+@-webkit-keyframes deconstructed2 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  24% {
+    -webkit-transform: translateX(0.5%);
+            transform: translateX(0.5%);
+  }
+  82% {
+    -webkit-transform: translateX(-0.2%);
+            transform: translateX(-0.2%);
+  }
+  100% {
+    -webkit-transform: translateX(-125%);
+            transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  24% {
+    -webkit-transform: translateX(0.5%);
+            transform: translateX(0.5%);
+  }
+  82% {
+    -webkit-transform: translateX(-0.2%);
+            transform: translateX(-0.2%);
+  }
+  100% {
+    -webkit-transform: translateX(-125%);
+            transform: translateX(-125%);
+  }
+}
+
+@-webkit-keyframes deconstructed3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  22% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  81% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-130%);
+            transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  22% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  81% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-130%);
+            transform: translateX(-130%);
+  }
+}
+
+@-webkit-keyframes deconstructed4 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  20% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  80% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-135%);
+            transform: translateX(-135%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  20% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  80% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-135%);
+            transform: translateX(-135%);
+  }
+}
+/*# sourceMappingURL=maintitle.css.map */

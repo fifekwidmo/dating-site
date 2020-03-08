@@ -321,10 +321,19 @@
      }
      .card {
          flex-basis: 20%;
+         display: flex;
+         flex-wrap: nowrap;
+         flex-direction: column;
+         justify-content: space-between;
          background-color: white;
-         height: 50vh;
          .grey {
              border-bottom: 1px solid cornflowerblue;
+         }
+         p {
+             padding: 0 20px;
+         }
+         h1 {
+             margin: 0;
          }
      }
  }
@@ -403,7 +412,7 @@
  //buttons
  .ball {
      position: absolute;
-     top: 50%;
+     top: 25%;
      left: 50%;
      -webkit-transform: translate(-50%, -50%);
      transform: translate(-50%, -50%);
@@ -420,7 +429,6 @@
      justify-content: center;
      align-items: center;
      flex-wrap: nowrap;
-     width: 100vw;
  }
  
  @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');

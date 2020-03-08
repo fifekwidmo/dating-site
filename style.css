@@ -972,12 +972,31 @@ header .main-page {
 .products .card {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
-  height: 50vh;
 }
 
 .products .card .grey {
   border-bottom: 1px solid cornflowerblue;
+}
+
+.products .card p {
+  padding: 0 20px;
+}
+
+.products .card h1 {
+  margin: 0;
 }
 
 .map .container-fifth {
@@ -1087,7 +1106,7 @@ footer h3 {
 
 .ball {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1112,7 +1131,6 @@ footer h3 {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 100vw;
 }
 
 .wrapper {
